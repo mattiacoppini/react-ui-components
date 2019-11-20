@@ -1,11 +1,11 @@
-# `core`
+# `Button`
 
 > TODO: description
 
 ## Usage
 
 ```
-const core = require('core');
+const button = require('Button');
 
 // TODO: DEMONSTRATE API
 ```

@@ -1,2 +1,10 @@
-node_modules
+# Configs
 .npmrc
+
+# Builds
+node_modules
+/**/coverage
+
+# Logs
+lerna-debug.log
+

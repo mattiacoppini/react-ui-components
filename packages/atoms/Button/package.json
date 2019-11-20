@@ -1,0 +1,36 @@
+{
+  "name": "@react-ui-components/button",
+  "version": "0.0.0",
+  "description": "A Button Component - Atom",
+  "author": "coppinim <mattia.coppini@dowjones.com>",
+  "homepage": "https://github.com/mattiacoppini/react-ui-components#readme",
+  "license": "ISC",
+  "main": "lib/Button.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "scripts": {
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "lib/**/*.{js,jsx}",
+      "!package.json",
+      "!lib/**/*.stories.{js,jsx}"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/setupTests.js"
+    ],
+    "setupFiles": [
+      "<rootDir>/__tests__/setupTests.js"
+    ]
+  }
+}

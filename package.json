@@ -2,16 +2,24 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "test:coverage": "lerna exec -- npm run test:coverage"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
     "@storybook/react": "^5.2.6",
     "babel-loader": "^8.0.6",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "jest": "^24.9.0",
+    "jest-enzyme": "^7.1.2",
     "lerna": "^3.18.4"
   },
   "dependencies": {
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "styled-components": "^4.4.1"
   }
 }
