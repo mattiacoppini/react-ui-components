@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "private": true,
+  "private": false,
   "scripts": {
     "storybook": "start-storybook",
     "test:coverage": "lerna exec -- npm run test:coverage"

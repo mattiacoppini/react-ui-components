@@ -1,6 +1,7 @@
 {
-  "name": "@react-ui-components/button",
-  "version": "0.0.0",
+  "name": "@wolfler/react-button",
+  "version": "0.0.2",
+  "private": false,
   "description": "A Button Component - Atom",
   "author": "coppinim <mattia.coppini@dowjones.com>",
   "homepage": "https://github.com/mattiacoppini/react-ui-components#readme",
@@ -17,7 +18,8 @@
     "registry": "http://registry.npmjs.org/"
   },
   "scripts": {
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "publish": "npm publish"
   },
   "jest": {
     "collectCoverageFrom": [
