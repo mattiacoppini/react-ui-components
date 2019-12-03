@@ -9,6 +9,7 @@ export const Button = styled.button`
     min-width: 100px;
     height: 30px;
     background-color: red;
+    border-color: black;
 `;
 
 export default Button;
