@@ -34,5 +34,6 @@
     "setupFiles": [
       "<rootDir>/__tests__/setupTests.js"
     ]
-  }
+  },
+  "gitHead": "a0c19b3898da6a1534bbbb048dc3ee2ade3c5bd8"
 }
