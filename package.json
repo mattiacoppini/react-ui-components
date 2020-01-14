@@ -3,7 +3,12 @@
   "private": false,
   "scripts": {
     "storybook": "start-storybook",
-    "test:coverage": "lerna exec -- npm run test:coverage"
+    "test:coverage": "lerna exec -- npm run test:coverage",
+    "patch-versioning": "lerna version patch --no-git-tag-version",
+    "minor-versioning": "lerna version minor --no-git-tag-version",
+    "major-versioning": "lerna version major --no-git-tag-version",
+    "develop-versioning": "lerna version prerelease --no-git-tag-version",
+    "publisher": "lerna publish from-package --yes"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
