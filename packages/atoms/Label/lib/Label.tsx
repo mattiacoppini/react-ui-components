@@ -1,5 +1,11 @@
-import React from 'react'
+import styled from 'styled-components';
 
-const Label: React.FC<{}> = ({children}) => <label>{children}</label>
+/**
+ * Label Component - Atom
+ * Displays and manage a Label
+ */
+export const Label = styled.label`
+    color: red;
+`;
 
 export default Label;

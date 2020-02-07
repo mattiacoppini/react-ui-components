@@ -18,7 +18,8 @@
     "declaration": true
   },
   "include": [
-    "packages/**/*"
+    "packages/**/*",
+    ".storybook/**/*"
   ],
   "exclude": [
     "node_modules",

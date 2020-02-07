@@ -1,11 +1,12 @@
 const path = require("path");
 const SRC_PATH = path.join(__dirname, '../packages');
 const STORIES_PATH = path.join(__dirname, '../packages');
+const CONFIG_DECORATOR = path.join(__dirname, 'decorators');
 //dont need stories path if you have your stories inside your //components folder
 module.exports = ({config}) => {
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
-    include: [SRC_PATH, STORIES_PATH],
+    include: [SRC_PATH, STORIES_PATH, CONFIG_DECORATOR],
       use: [
         {
           loader: require.resolve('awesome-typescript-loader'),

@@ -15,6 +15,6 @@ export const Central = styled.div`
 
 /**
  * Decorator for Storybook. 
- * Centralizes the content of each story.
+ * Centers the content of each story.
  */
-export default storyFn => <Central>{storyFn()}</Central>
+export default (storyFn:any) => <Central>{storyFn()}</Central>;
