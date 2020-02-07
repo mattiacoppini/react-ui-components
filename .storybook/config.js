@@ -1,3 +1,7 @@
 import { configure } from '@storybook/react';
-
-configure(require.context('../packages', true, /\.stories\.js$/), module);
+//const req = require.context('../packages/atoms/lib', true, /.stories.tsx$/);
+const req = require.context('../packages', true, /\.stories\.tsx$/);
+function loadStories() {
+  req.keys().forEach(req);
+}
+configure(loadStories, module);
