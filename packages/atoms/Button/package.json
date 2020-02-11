@@ -18,7 +18,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "scripts": {
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage && rm -rf coverage"
   },
   "jest": {
     "transform": {
@@ -34,11 +34,8 @@
       "<rootDir>/__tests__/setupTests.ts"
     ],
     "setupFiles": [
-      "<rootDir>/__tests__/setupTests.ts"
+      "<rootDir>/../../../__tests__/setupTests.ts"
     ]
   },
-  "gitHead": "9c48478646ffc0129ececa88b7177764bdf6f0ad",
-  "devDependencies": {
-    "ts-jest": "^25.2.0"
-  }
+  "gitHead": "9c48478646ffc0129ececa88b7177764bdf6f0ad"
 }
