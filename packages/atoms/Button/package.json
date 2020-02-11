@@ -21,18 +21,24 @@
     "test:coverage": "jest --coverage"
   },
   "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
     "collectCoverageFrom": [
-      "lib/**/*.{js,jsx}",
+      "lib/**/*.{js,jsx,tsx}",
       "!package.json",
-      "!lib/**/*.stories.{js,jsx}"
+      "!lib/**/*.stories.{js,jsx,tsx}"
     ],
     "testPathIgnorePatterns": [
       "/node_modules/",
-      "/setupTests.js"
+      "<rootDir>/__tests__/setupTests.ts"
     ],
     "setupFiles": [
-      "<rootDir>/__tests__/setupTests.js"
+      "<rootDir>/__tests__/setupTests.ts"
     ]
   },
-  "gitHead": "9c48478646ffc0129ececa88b7177764bdf6f0ad"
+  "gitHead": "9c48478646ffc0129ececa88b7177764bdf6f0ad",
+  "devDependencies": {
+    "ts-jest": "^25.2.0"
+  }
 }

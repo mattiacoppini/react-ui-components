@@ -7,6 +7,9 @@
   "homepage": "https://github.com/mattiacoppini/react-ui-components#readme",
   "license": "ISC",
   "main": "lib/Label.tsx",
+  "scripts": {
+    "test:coverage": "jest --coverage"
+  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -16,5 +19,22 @@
   ],
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "lib/**/*.{js,jsx,tsx}",
+      "!package.json",
+      "!lib/**/*.stories.{js,jsx,tsx}"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/__tests__/setupTests.ts"
+    ],
+    "setupFiles": [
+      "<rootDir>/__tests__/setupTests.ts"
+    ]
   }
 }
